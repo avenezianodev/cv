@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link Preview-->
+    <meta name="og:image" content="https://andreaveneziano.github.io/cv/img/meta_img.jpg" />
+    <meta property="og:title" content="Andrea Veneziano CV" />
+    <meta itemprop="description" content="Hi,I'm Andrea Veneziano and I'm a Front End Developer" />
+    <meta property="og:image" content="https://andreaveneziano.github.io/cv/img/meta_img.jpg" />
+    <title>Andrea Veneziano CV</title>
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="img/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon//apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon//apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon//apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon//apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon//apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon//apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon//apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon//apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon//apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon//android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon//favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon//favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!--Fine Favicon-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+    <!-- Script --> 
+    <script src="js/script.js"> </script>
+</head>
+<body class="preload">
+    <!--Inzio home-->    
+    <header class="header">
+        <button class="header__button" id="btnNav" type="button">
+            <i class="fa fa-bars"></i>
+        </button>
+        <span> <a href="index.html"> Andrea Veneziano </a> </span>   
+    </header>
+    <nav class="nav">
+        <div class="nav__links">
+            <a href="javascript:void(0)" class="closebtn">×</a>
+            <br> <br>
+            <a href="index.html" class="nav__link">
+                <i class="fa fa-home" aria-hidden="true"></i>
+                  Home
+              </a>
+              <a class="nav__link" href="#cv">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                  About Me
+              </a>
+              <a class="nav__link" href="#project">
+                <i class="fa fa-folder-open"></i>
+                  Projects
+              </a>
+            
+        </div>
+        <div class="nav_overlay"></div>
+    </nav>
+    <div class="container">
+        <div class=titolo> 
+            <h3>Hi, I'm <span style="color: red; font-weight: 700; "> Andrea Veneziano</span> <br>and  I'm a front end developer</h3>
+        </div>
+        <picture>
+             <source media="(min-width:960px)" 
+                    srcset="img/web_dev.jpg 1068w,
+                            img/web_dev.jpg 1602w" 
+                    alt="background desktop">
+             <source media="(min-width:600px)" srcset="img/web_dev_md.jpg" alt="background tablet">
+             <source srcset="img/web_dev_m.jpg" alt="background mobile">
+             <img src="img/web_dev.jpg" alt="background">
+        </picture>
+       
+        <button class="btn">
+            <a href="#cv">
+                <i class="fa fa-chevron-down" aria-hidden="true">  </i> 
+                Read More
+            </a>    
+        </button>
+ 
+    </div>
+    <div class="cv">
+        <div id="cv" class="container_cv">
+            <div class="sx">
+                <div class="txt_profilo">   
+                    <div class="imgbox">
+                        <img src="img/new_profile.jpg" alt="foto profilo">
+                    </div>
+                    <h2>Andrea Veneziano<br><span>Web Developer</span></h2>
+                </div>
+            
+                <div class="contactinfo">
+                    <h3 class="title"> Info </h3>
+                    <ul>
+                        <li>
+                            <span class="icon"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                            <span class="text">23 Luglio 1997</span>
+                        </li>
+                        <li>
+                            <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                            <span class="text">Bologna, Italia</span>
+                        </li>        
+                    </ul>
+                </div> 
+                
+                <div class="contactinfo skills"> 
+                    <h3 class="title">Skills</h3>
+                    <div class="box">
+                        <h4>Figma</h4>
+                        <div class="percentuale">
+                            <div style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <h4>Photoshop</h4>
+                        <div class="percentuale">
+                            <div style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <h4>Illustrator</h4>
+                        <div class="percentuale">
+                            <div style="width: 65%"></div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <h4>Html / CSS </h4>
+                        <div class="percentuale">
+                            <div style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <h4>Javascript</h4>
+                        <div class="percentuale">
+                            <div style="width: 60%"></div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <h4>Bootstrap</h4>
+                        <div class="percentuale">
+                            <div style="width: 70%"></div>
+                        </div>
+                    </div>
+                    <!-- <div class="box">
+                        <h4>Php</h4>
+                        <div class="percentuale">
+                            <div style="width: 60%"></div>
+                        </div>
+                    </div> -->
+                    <div class="box">
+                        <h4>Wordpress</h4>
+                        <div class="percentuale">
+                            <div style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="contactinfo istruzione">
+                    <h3 class="title"> Istruzione </h3>
+                    <ul>
+                        <li>
+                            <h5> 2017 - 2021</h5>
+                            <h4> Laurea triennale in Informatica Umanistica.</h4>
+                            <h4> Università di Pisa</h4>
+                        </li>
+                        <li>
+                            <h5> 2011 - 2016</h5>
+                            <h4> Diploma di Scuola Secondaria di Secondo Grado <br>Liceo Scientifico</h4>
+                            <h4> I.S.I.S.S. A. Giordano</h4>
+                        </li>
+                        
+                    </ul>
+                </div>-->
+
+                <div class="contactinfo lingue">
+                    <h3 class="title"> Lingue </h3>
+                    <ul>
+                        <li>
+                            <span class="text">Inglese</span> 
+                            <span class="percentuale"> 
+                                <div style="width:80%"></div>
+                            </span> 
+                        </li>
+                        <li>
+                            <span class="text">Spagnolo</span> 
+                            <span class="percentuale"> 
+                                <div style="width:35%"></div>
+                            </span> 
+                        </li>
+                    </ul>
+                </div> 
+                <div class="contactinfo">
+                    <h3 class="title"> Contatti </h3>
+                    <ul>
+                        <li>
+                            <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                            <span class="text">+39 392 0159705</span>
+                        </li>
+                        <li>
+                            <span class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                            <span class="text">a.venezianowork@gmail.com</span>
+                        </li>
+                        <li>
+                            <span class="icon"><i class="fa fa-globe" aria-hidden="true"></i></span>
+                            <a href="https://andreavenezianodev.github.io/cv/" target="_blank">
+                                <span class="text">andreaveneziano.github.io/cv</span>
+                            </a>
+                        </li>
+                        <li>
+                            <span class="icon"><i class="fa fa-linkedin" aria-hidden="true"></i></span>
+                            <a href="https://www.linkedin.com/in/andrea-veneziano-/" target="_blank">
+                                <span class="text">/andrea-veneziano</span>
+                            </a>
+                        </li>
+                
+                    </ul>
+                </div> 
+            </div>
+            <div class="dx">
+                <div class="about">
+                    <h2 class="title2">Profilo personale</h2>
+                    <p>Estremamente motivato a sviluppare costantemente le mie competenze e a crescere professionalmente.
+                        Flessibile e determinato nel raggiungimento degli obiettivi.</p>
+                </div>
+                <div class="about">
+                    <h2 class="title2">Competenze</h2>
+                    <ul>
+                        <li> Ottime capacità di comunicazione e networking</li>
+                        <li> Lavoro bene sia in team che in modo indipendente</li>
+                        <li> Capacità di lavorare sotto pressione e multitasking</li>
+                        <li> Capacità di seguire le istruzioni e produrre risultati di qualità</li>
+                        <li> Capacità organizzativa delle tempistiche e delle attività richieste</li>
+                    </ul>
+                </div>
+                
+                <div class="about">
+                    <h2 class="title2">Esperienze lavorative</h2>
+                     <div class="box">
+                        <div class="anno_azienda">
+                            <h5>Gennaio 2023 - Oggi</h5>
+                            <h5>Sydea Srl</h5>
+                        </div>
+                        <div class="text">
+                            <h4>Front end Developer & UI Designer</h4>
+                            <p>
+                                Sviluppo e manutenzione di web app in React.
+                                Inoltre, svolgo il ruolo di UI Designer, creando mockup
+                                prototipati tramite Figma, garantendo un approccio
+                                integrato tra progettazione visiva e sviluppo tecnico.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="anno_azienda">
+                            <h5>Aprile 2022 - Settembre 2022</h5>
+                            <h5>Hibo Srl</h5>
+                        </div>
+                        <div class="text">
+                            <h4>Web Data Entry and Developer</h4>
+                            <p>
+                                Tirocinio incentrato su attività di aggiornamento e manutenzione di siti web clienti, caricamento e gestione contenuti su diversi CMS e postproduzione immagini in Photoshop
+                            </p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="anno_azienda">
+                            <h5>Ottobre 2021 - Gennaio 2022</h5>
+                            <h5>Università di Pisa</h5>
+                        </div>
+                        <div class="text">
+                            <h4>Part-time Segreteria studenti</h4>
+                            <p>
+                                Servizio svolto presso la direzione servizi per la didattica
+                                e internazionalizzazione per tutte le attività connesse
+                                all'immatricolazione degli studenti. Conoscenza del
+                                software gestionale per le segreterie universitarie Esse3.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about">
+                    <h2 class="title2">Istruzione</h2>
+                    <div class="box">
+                        <div class="anno_azienda">
+                            <h4 style="color:#03a9f4;">2017 - 2021</h4>
+                        </div>
+                        <div class="text">
+                            <p>
+                                Laurea triennale in Informatica Umanistica.
+                                <br>
+                                Università di Pisa
+                            </p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="anno_azienda">
+                            <h4 style="color:#03a9f4;">2011 - 2016</h4>
+                        </div>
+                        <div class="text">
+                            <p>
+                                Diploma di Scuola Secondaria di Secondo Grado
+                                <br>
+                                Liceo Scientifico A. Giordano
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about hobby"> 
+                    <h2 class="title2">Hobby</h2>
+                    <ul>
+                        <li><i class="fa fa-gamepad" aria-hidden="true"></i>Gaming</li>
+                        <li><i class="fa fa-futbol-o" aria-hidden="true"></i>Fitness</li>
+                        <li><i class="fa fa-cutlery" aria-hidden="true"></i>Food</li>
+                        <li><i class="fa fa-headphones" aria-hidden="true"></i>Music</li>
+                    </ul>
+                </div>  
+            </div>
+        </div>
+    </div> 
+    <div id="project" class="projects"> 
+        <h1>Web Dev</h1>
+        <div class="container_projects">  
+            <div class="card">
+                <div class="card-image card-1"></div>
+                <h2>Il Molise e la Linea Gustav</h2>
+                <p>Progetto realizzato come tesi di laurea per il
+                    Corso Di Studi in Informatica Umanistica a.a. 2020/2021
+                </p>
+                <a href="https://il-molise-e-la-linea-gustav.web.app" target="_blank"> <i class="fa fa-globe" aria-hidden="true"></i>
+                    Vai al sito </a>
+            </div>
+            <div class="card">
+                <div class="card-image card-2"></div>
+                <h2>Squid Game Invite</h2>
+                <p>
+                    Progetto realizzato come simpatico invito per la festa di laurea
+                </p>
+                <a href="https://andreaveneziano.github.io/deg" target="_blank" > <i class="fa fa-globe" aria-hidden="true"></i> Vai al sito </a>
+            </div>
+        </div> 
+        <h1>Progetti grafici</h1>
+        <div class="container_projects"> 
+            <div class="card">
+                <div class="card-image card-6"></div>
+                <h2 class=" mb-15">Mockup Web APP Snapon</h2>
+                <p>
+                    Progetto realizzato tramite Figma per web app di gestione e inventario magazzino
+                </p>
+                <a style="background:rgb(209, 2, 2);" href="https://www.figma.com/proto/XEEVugytVOmIICqvDhAfGs/SnapOn?type=design&node-id=78-17220&t=kJb8s4236YfAg4s6-0&scaling=contain&page-id=0%3A1&starting-point-node-id=78%3A17220&show-proto-sidebar=1" download target="_blank" > 
+                    <i class="fa fa-globe" aria-hidden="true"></i>
+                    Visualizza Progetto 
+                </a>
+            </div>
+            <div class="card">
+                <div class="card-image card-6"></div>
+                <h2>Mockup Web APP SAP Toscana Aereoporti</h2>
+                <p>
+                    Progetto realizzato tramite Figma per web app di manutenzione mezzi
+                </p>
+                <a style="background:rgb(209, 2, 2);" href="https://www.figma.com/proto/FDDt8iXTPHOv6JbL50u87E/App-Fiori---Toscana-Aeroporti?type=design&t=kJb8s4236YfAg4s6-0&scaling=min-zoom&page-id=0%3A1&node-id=3-5&starting-point-node-id=3%3A5" target="_blank" > 
+                    <i class="fa fa-globe" aria-hidden="true"></i>
+                    Visualizza Progetto 
+                </a>
+            </div>
+            <div class="card">
+                <div class="card-image card-6"></div>
+                <h2 class=" mb-15">Mockup Web APP SAP</h2>
+                <p>
+                    Progetto realizzato tramite Figma per web app di management risorse 
+                </p>
+                <a style="background:rgb(209, 2, 2);" href="https://www.figma.com/proto/yxG6JPIS80hKe1clPbCCje/SAP-final?type=design&t=kJb8s4236YfAg4s6-0&scaling=min-zoom&page-id=0%3A1&node-id=52-38707&starting-point-node-id=52%3A38707" target="_blank" > 
+                    <i class="fa fa-globe" aria-hidden="true"></i>
+                    Visualizza Progetto 
+                </a>
+            </div>
+            <div class="card">
+                <div class="card-image card-3"></div>
+                <h2 class=" mb-15">Prototipo di logo aziendale</h2><br>
+                <p>
+                    Progetto realizzato tramite Adobe Illustrator per l'esame di Progettazione Grafica
+                </p>
+                <a style="background:rgb(209, 2, 2);" href="download/Logo.ai" download target="_blank" > 
+                    <i class="fa fa-download" aria-hidden="true"></i>
+                    Scarica Progetto 
+                </a>
+            </div>
+            <div class="card">
+                <div class="card-image card-4 "></div>
+                <h2>Prototipo di locandina evento aziendale</h2>
+                <p>
+                    Progetto realizzato tramite Adobe Illustrator per l'esame di Progettazione Grafica
+                </p>
+                <a style="background:rgb(209, 2, 2);" href="download/Poster.ai" download target="_blank" > 
+                    <i class="fa fa-download" aria-hidden="true"></i>
+                    Scarica Progetto 
+                </a>
+            </div>
+            <div class="card">
+                <div class="card-image card-5"></div>
+                <h2>Prototipo di wireframe sito aziendale</h2>
+                <p>
+                    Progetto realizzato tramite Adobe Photoshop per l'esame di Progettazione Grafica
+                </p>
+                <a style="background:rgb(209, 2, 2);" href="download/home sito.psd" download target="_blank" > 
+                    <i class="fa fa-download" aria-hidden="true"> </i>
+                    Scarica Progetto
+                </a>
+            </div>
+        </div>
+    </div>
+    <button id="topbtn" class="hide-class">
+        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+    </button> 
+    <script src="js/topbtn.js"> </script>
+</body>
+</html>
